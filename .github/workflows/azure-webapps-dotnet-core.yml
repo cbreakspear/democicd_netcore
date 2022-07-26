@@ -17,7 +17,7 @@
 # For more information on the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # For more samples to get started with GitHub Action workflows to deploy to Azure: https://github.com/Azure/actions-workflow-samples
 
-name: Build and deploy ASP.Net Core app to an Azure Web App
+name: Build and deploy ASP.Net Core app CICD
 
 env:
   AZURE_WEBAPP_NAME: demo-cicd-webapp-dotnetcore-cb    # set this to the name of your Azure Web App
@@ -26,35 +26,33 @@ env:
 
 on:
   push:
-    branches:
-      - "main"
-  workflow_dispatch:
-
-permissions:
-  contents: read
-
-  jobs:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout GitHub actions
-        uses: actions/checkout@v2
-      - name: Setup .NET Core
-        uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: 6.0.x
-      - name: Install dependencies
-        run: dotnet restore "demo-dotnet-core-sln/DemoCICD-QOTD"
-      - name: Build code
-        run: dotnet build "demo-dotnet-core-sln/DemoCICD-QOTD" --configuration Release --no-restore
-      - name: Test code 
-        run: dotnet test "demo-dotnet-core-sln/Demo-CICD-QOTD.Tests"
-      - name: Publish application
-        run: dotnet publish "demo-dotnet-core-sln/DemoCICD-QOTD" -c Release -o myApp
-      - name: Upload Artifacts
-        uses: actions/upload-artifact@v2
-        with:
-         name: my-artifact
-         path: "demo-dotnet-core-sln/DemoCICD-QOTD"
+    - name: Checkout GitHub actions
+      uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.0.x
+    - name: Install dependencies
+      run: dotnet restore "demo-dotnet-core-sln/DemoCICD-QOTD"
+    - name: Build code
+      run: dotnet build "demo-dotnet-core-sln/DemoCICD-QOTD" --configuration Release --no-restore
+    - name: Test code 
+      run: dotnet test "demo-dotnet-core-sln/Demo-CICD-QOTD.Tests"
+    - name: Publish application
+      run: dotnet publish "demo-dotnet-core-sln/DemoCICD-QOTD" -c Release -o myApp
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+       name: my-artifact
+       path: "demo-dotnet-core-sln/DemoCICD-QOTD"
+
          
   deploy:
       permissions:
