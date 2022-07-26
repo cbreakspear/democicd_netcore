@@ -54,7 +54,7 @@ jobs:
             ${{ runner.os }}-nuget-
 
       - name: Build with dotnet
-        run: dotnet build ${{env.DOTNET_ROOT}}/demo-dotnet-core-sln/DemoCICD-QOTD
+        run: dotnet build "demo-dotnet-core-sln/DemoCICD-QOTD" --configuration Release --no-restore
 
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/demo-dotnet-core-sln/DemoCICD-QOTD
