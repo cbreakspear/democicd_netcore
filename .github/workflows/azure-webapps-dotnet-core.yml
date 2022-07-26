@@ -55,6 +55,7 @@ jobs:
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
+          run:"${{env.DOTNET_ROOT}}"
 
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/demo-dotnet-core-sln/DemoCICD-QOTD
