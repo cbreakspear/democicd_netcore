@@ -17,13 +17,13 @@ jobs:
     - name: Install dependencies
       run: dotnet restore "demo-dotnet-core-sln/DemoCICD-QOTD"
     - name: Build code
-      run: dotnet build "./DemoCICD-QOTD" --configuration Release --no-restore
+      run: dotnet build "demo-dotnet-core-sln/DemoCICD-QOTD" --configuration Release --no-restore
     - name: Test code 
-      run: dotnet test "./DemoCICD-QOTD" --no-restore --verbosity normal
+      run: dotnet test "demo-dotnet-core-sln/Demo-CICD-QOTD.Tests" --no-restore --verbosity normal
     - name: Publish application
-      run: dotnet publish "./myApp" -c Release -o myApp
+      run: dotnet publish "demo-dotnet-core-sln/DemoCICD-QOTD" -c Release -o myApp
     - name: Upload Artifacts
       uses: actions/upload-artifact@v2
       with:
        name: my-artifact
-       path: "./DemoCICD-QOTD"
+       path: "demo-dotnet-core-sln/DemoCICD-QOTD"
