@@ -19,7 +19,7 @@ jobs:
     - name: Build code
       run: dotnet build "demo-dotnet-core-sln/DemoCICD-QOTD" --configuration Release --no-restore
     - name: Test code 
-      run: dotnet test
+      run: dotnet test "demo-dotnet-core-sln/DemoCICD-QOTD"
     - name: Publish application
       run: dotnet publish "demo-dotnet-core-sln/DemoCICD-QOTD" -c Release -o myApp
     - name: Upload Artifacts
