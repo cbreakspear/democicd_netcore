@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xrxwYXE3Xpw4tdKrrQ0SjJA8VDM6pIJp2YcLYnsBBWd8NB6uuFKIPBQzRKMzgJEAGt2VPD89qN4w+Ih48OKHMQ==",
+  "dgSpecHash": "t5F7Bg2oKhF3Xn0FyoxjH9kr3p6sZvzDf8yW5DKOF7urhI9/jIrNDtMyOB6RFWLisFRNjgoyg+EFHaJqXSLEuQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\temp\\demo-dotnet-core-sln\\Demo-CICD-QOTD.Tests\\Demo-CICD-QOTD.Tests.csproj",
+  "projectFilePath": "C:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\Demo-CICD-QOTD.Tests\\Demo-CICD-QOTD.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cbrea\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\cbrea\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",

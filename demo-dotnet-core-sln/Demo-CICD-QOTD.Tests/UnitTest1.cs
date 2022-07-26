@@ -18,7 +18,7 @@ namespace Demo_CIDC_QOTD.Tests
             
 
             //ASSERT
-            Assert.False(actualtResult.Equals("Not the quote it should be"), "This was not the quote it has selected");
+            Assert.True(actualtResult.Equals("Not the quote it should be"), "This was not the quote it has selected");
 
         }
 

@@ -6121,11 +6121,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\temp\\demo-dotnet-core-sln\\Demo-CICD-QOTD.Tests\\Demo-CICD-QOTD.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\Demo-CICD-QOTD.Tests\\Demo-CICD-QOTD.Tests.csproj",
       "projectName": "Demo-CICD-QOTD.Tests",
-      "projectPath": "c:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\temp\\demo-dotnet-core-sln\\Demo-CICD-QOTD.Tests\\Demo-CICD-QOTD.Tests.csproj",
+      "projectPath": "C:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\Demo-CICD-QOTD.Tests\\Demo-CICD-QOTD.Tests.csproj",
       "packagesPath": "C:\\Users\\cbrea\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\temp\\demo-dotnet-core-sln\\Demo-CICD-QOTD.Tests\\obj\\",
+      "outputPath": "C:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\Demo-CICD-QOTD.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6143,8 +6143,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "c:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\temp\\demo-dotnet-core-sln\\DemoCICD-QOTD\\DemoCICD-QOTD.csproj": {
-              "projectPath": "c:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\temp\\demo-dotnet-core-sln\\DemoCICD-QOTD\\DemoCICD-QOTD.csproj"
+            "C:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\DemoCICD-QOTD\\DemoCICD-QOTD.csproj": {
+              "projectPath": "C:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\DemoCICD-QOTD\\DemoCICD-QOTD.csproj"
             }
           }
         }
