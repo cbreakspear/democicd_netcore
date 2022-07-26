@@ -34,36 +34,27 @@ permissions:
   contents: read
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
+  runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Set up .NET Core
-        uses: actions/setup-dotnet@v2
-        with:
-          dotnet-version: ${{ env.DOTNET_VERSION }}
-      
-      - name: Set up dependency caching for faster builds
-        uses: actions/cache@v3
-        with:
-          path: ~/.nuget/packages
-          key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-nuget-
-
-      - name: Build with dotnet
-        run: dotnet build "demo-dotnet-core-sln/DemoCICD-QOTD" --configuration Release --no-restore
-
-      - name: dotnet publish
-        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/demo-dotnet-core-sln/DemoCICD-QOTD
-
-      - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v3
-        with:
-          name: .net-app
-          path: ${{env.DOTNET_ROOT}}/demo-dotnet-core-sln/DemoCICD-QOTD
+    - name: Checkout GitHub actions
+      uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.0.x
+    - name: Install dependencies
+      run: dotnet restore "demo-dotnet-core-sln/DemoCICD-QOTD"
+    - name: Build code
+      run: dotnet build "demo-dotnet-core-sln/DemoCICD-QOTD" --configuration Release --no-restore
+    - name: Test code 
+      run: dotnet test "demo-dotnet-core-sln/Demo-CICD-QOTD.Tests"
+    - name: Publish application
+      run: dotnet publish "demo-dotnet-core-sln/DemoCICD-QOTD" -c Release -o myApp
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+       name: my-artifact
+       path: "demo-dotnet-core-sln/DemoCICD-QOTD"
 
   deploy:
     permissions:
