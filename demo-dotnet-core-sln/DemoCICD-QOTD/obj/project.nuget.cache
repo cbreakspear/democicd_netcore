@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G63CfXsdOs7CCefPk9hW8taD8xNjVZZU9Po4H+0a3Afk1S236Ob4Wx6HDeHeSpibnENfCVnRGANVwXWtgPmRFw==",
+  "dgSpecHash": "MAJ/zQqdlj/m575CHpu0i1iXk383wBdVnw7FPDdXbdtxGYPrP6fnpW//jVoSC77sDt9XNfi/cJVXZJuW86Iwsg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\temp\\demo-dotnet-core-sln\\DemoCICD-QOTD\\DemoCICD-QOTD.csproj",
+  "projectFilePath": "C:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\DemoCICD-QOTD\\DemoCICD-QOTD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cbrea\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\cbrea\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
