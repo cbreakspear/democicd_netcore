@@ -15,7 +15,7 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Install dependencies
-      run: dotnet restore "/demo-dotnet-core-sln/DemoCICD-QOTD"
+      run: dotnet restore "demo-dotnet-core-sln/DemoCICD-QOTD"
     - name: Build code
       run: dotnet build "./DemoCICD-QOTD" --configuration Release --no-restore
     - name: Test code 
