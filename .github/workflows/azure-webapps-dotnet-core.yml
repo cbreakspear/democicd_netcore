@@ -54,11 +54,11 @@ jobs:
             ${{ runner.os }}-nuget-
       
       - name: Build with dotnet
-        run: dotnet build --configuration Release
-          run:"${{env.DOTNET_ROOT}}/DemoCICD-QOTD.csproj"
+        run: dotnet build ${{env.DOTNET_ROOT}}/DemoCICD-QOTD
+
 
       - name: dotnet publish
-        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/DemoCICD-QOTD.csproj
+        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/DemoCICD-QOTD
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
