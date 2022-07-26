@@ -33,39 +33,39 @@ on:
 permissions:
   contents: read
 
-jobs:
-  runs-on: ubuntu-latest
-    steps:
-    - name: Checkout GitHub actions
-      uses: actions/checkout@v2
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 6.0.x
-    - name: Install dependencies
-      run: dotnet restore "demo-dotnet-core-sln/DemoCICD-QOTD"
-    - name: Build code
-      run: dotnet build "demo-dotnet-core-sln/DemoCICD-QOTD" --configuration Release --no-restore
-    - name: Test code 
-      run: dotnet test "demo-dotnet-core-sln/Demo-CICD-QOTD.Tests"
-    - name: Publish application
-      run: dotnet publish "demo-dotnet-core-sln/DemoCICD-QOTD" -c Release -o myApp
-    - name: Upload Artifacts
-      uses: actions/upload-artifact@v2
-      with:
-       name: my-artifact
-       path: "demo-dotnet-core-sln/DemoCICD-QOTD"
-
-  deploy:
-    permissions:
-      contents: none
+  jobs:
     runs-on: ubuntu-latest
-    needs: build
-    environment:
-      name: 'Development'
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
-
     steps:
+      - name: Checkout GitHub actions
+        uses: actions/checkout@v2
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 6.0.x
+      - name: Install dependencies
+        run: dotnet restore "demo-dotnet-core-sln/DemoCICD-QOTD"
+      - name: Build code
+        run: dotnet build "demo-dotnet-core-sln/DemoCICD-QOTD" --configuration Release --no-restore
+      - name: Test code 
+        run: dotnet test "demo-dotnet-core-sln/Demo-CICD-QOTD.Tests"
+      - name: Publish application
+        run: dotnet publish "demo-dotnet-core-sln/DemoCICD-QOTD" -c Release -o myApp
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+         name: my-artifact
+         path: "demo-dotnet-core-sln/DemoCICD-QOTD"
+         
+  deploy:
+      permissions:
+      contents: none
+      runs-on: ubuntu-latest
+      needs: build
+        environment:
+          name: 'Development'
+          url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+
+      steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v3
         with:
