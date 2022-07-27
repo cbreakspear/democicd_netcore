@@ -47,12 +47,12 @@ jobs:
     - name: Test code 
       run: dotnet test "demo-dotnet-core-sln/Demo-CICD-QOTD.Tests"
     - name: Publish application
-      run: dotnet publish "demo-dotnet-core-sln/DemoCICD-QOTD" -c Release -o ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/${{ env.AZURE_WEBAPP_NAME }}
+      run: dotnet publish "demo-dotnet-core-sln/DemoCICD-QOTD" -c Release -o ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/publish
     - name: Upload Artifacts
       uses: actions/upload-artifact@v2
       with:
        name: my-artifact
-       path: '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/${{ env.AZURE_WEBAPP_NAME }}'
+       path: '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/publish'
 
 
          
@@ -65,10 +65,14 @@ jobs:
           name: 'Development'
           url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     steps:
+        - name: Download artifact from build job
+          uses: actions/download-artifact@v3
+          with:
+            name: my-artifact
         - name: 'Deploy to Azure WebApp'
           id: deploy-to-webapp 
           uses: azure/webapps-deploy@v2
           with:
             app-name: ${{ env.AZURE_WEBAPP_NAME }}
             publish-profile: ${{ secrets.AZURE_2 }}
-            package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/${{ env.AZURE_WEBAPP_NAME }}
+            package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/publish
