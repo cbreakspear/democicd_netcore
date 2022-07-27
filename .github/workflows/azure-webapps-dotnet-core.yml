@@ -21,7 +21,7 @@ name: Build and deploy ASP.Net Core app CICD
 
 env:
   AZURE_WEBAPP_NAME: demo-cicd-webapp-dotnetcore-cb    # set this to the name of your Azure Web App
-  AZURE_WEBAPP_PACKAGE_PATH: 'demo-dotnet-core-sln/DemoCICD-QOTD'      # set this to the path to your web app project, defaults to the repository root
+  AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
   DOTNET_VERSION: '6.0.x'                 # set this to the .NET Core version to use
 
 on:
@@ -46,7 +46,7 @@ jobs:
     - name: Test code 
       run: dotnet test "demo-dotnet-core-sln/Demo-CICD-QOTD.Tests"
     - name: Publish application
-      run: dotnet publish "demo-dotnet-core-sln/DemoCICD-QOTD" -c Release -o myApp
+      run: dotnet publish "demo-dotnet-core-sln/DemoCICD-QOTD" -c Release -o myapp
     - name: Upload Artifacts
       uses: actions/upload-artifact@v2
       with:
@@ -67,7 +67,7 @@ jobs:
         - name: Download artifact from build job
           uses: actions/download-artifact@v3
           with:
-            name: .net-app
+            name: my-artifact
     
         - name: 'Deploy to Azure WebApp'
           id: deploy-to-webapp 
