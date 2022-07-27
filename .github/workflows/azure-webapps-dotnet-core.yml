@@ -68,7 +68,7 @@ jobs:
           uses: actions/download-artifact@v3
           with:
             name: my-artifact
-    
+            path: "demo-dotnet-core-sln/DemoCICD-QOTD"
         - name: 'Deploy to Azure WebApp'
           id: deploy-to-webapp 
           uses: azure/webapps-deploy@v2
