@@ -48,7 +48,11 @@ jobs:
       run: dotnet test "demo-dotnet-core-sln/Demo-CICD-QOTD.Tests"
     - name: Publish application
       run: dotnet publish "demo-dotnet-core-sln/DemoCICD-QOTD" -c Release -o ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/${{ env.AZURE_WEBAPP_NAME }}
-   
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+       name: my-artifact
+       path: '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/${{ env.AZURE_WEBAPP_NAME }}'
 
 
          
