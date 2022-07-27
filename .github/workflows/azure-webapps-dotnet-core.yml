@@ -46,7 +46,7 @@ jobs:
     - name: Test code 
       run: dotnet test "demo-dotnet-core-sln/Demo-CICD-QOTD.Tests"
     - name: Publish application
-      run: dotnet publish "demo-dotnet-core-sln/DemoCICD-QOTD" -c Release -o myApp
+      run: dotnet publish -c Release -o ./publish
     - name: Upload Artifacts
       uses: actions/upload-artifact@v2
       with:
@@ -76,7 +76,3 @@ jobs:
             app-name: ${{ env.AZURE_WEBAPP_NAME }}
             publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
             package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
-        - name: Run SSH command
-          uses: garygrossgarten/github-action-ssh@v0.3.0
-          with:
-            command: sudo dotnet watch run
