@@ -46,7 +46,7 @@ jobs:
     - name: Test code 
       run: dotnet test "demo-dotnet-core-sln/Demo-CICD-QOTD.Tests"
     - name: Publish application
-      run: dotnet publish -c Release -o ./publish
+      run: dotnet publish "demo-dotnet-core-sln/DemoCICD-QOTD" -c Release -o ./publish
     - name: Upload Artifacts
       uses: actions/upload-artifact@v2
       with:
