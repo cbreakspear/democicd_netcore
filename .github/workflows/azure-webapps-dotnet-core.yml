@@ -79,4 +79,4 @@ jobs:
         - name: Run SSH command
           uses: garygrossgarten/github-action-ssh@v0.3.0
           with:
-            command: sudo service deferat start
+            command: sudo dotnet watch run
