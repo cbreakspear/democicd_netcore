@@ -47,7 +47,7 @@ jobs:
     - name: Test code 
       run: dotnet test "demo-dotnet-core-sln/Demo-CICD-QOTD.Tests"
     - name: Publish application
-      run: dotnet publish "demo-dotnet-core-sln/DemoCICD-QOTD" -c Release -o ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp
+      run: dotnet publish "demo-dotnet-core-sln/DemoCICD-QOTD" -c Release -o ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/${{ env.AZURE_WEBAPP_NAME }}
    
 
 
@@ -58,4 +58,4 @@ jobs:
       with: 
           app-name: ${{ env.AZURE_WEBAPP_NAME }} # Replace with your app name
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE  }} # Define secret variable in repository settings as per action documentation
-          package: '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp'
+          package: '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/${{ env.AZURE_WEBAPP_NAME }}'
