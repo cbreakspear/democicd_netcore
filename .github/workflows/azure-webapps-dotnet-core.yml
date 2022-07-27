@@ -48,7 +48,7 @@ jobs:
     - name: Publish application
       run: |
           dotnet restore
-          dotnet build --configuration Release
+          dotnet build "demo-dotnet-core-sln/DemoCICD-QOTD" --configuration Release
           dotnet publish -c Release -o '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp'
 
 
