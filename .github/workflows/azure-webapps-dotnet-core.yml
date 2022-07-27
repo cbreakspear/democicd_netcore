@@ -46,12 +46,12 @@ jobs:
     - name: Test code 
       run: dotnet test "demo-dotnet-core-sln/Demo-CICD-QOTD.Tests"
     - name: Publish application
-      run: dotnet publish "demo-dotnet-core-sln/DemoCICD-QOTD" -c Release -o ./publish
+      run: dotnet publish "demo-dotnet-core-sln/DemoCICD-QOTD" -c Release -o ./DemoCICD-QOTD
     - name: Upload Artifacts
       uses: actions/upload-artifact@v2
       with:
        name: my-artifact
-       path: "demo-dotnet-core-sln/DemoCICD-QOTD"
+       path: '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/DemoCICD-QOTD'
 
 
          
