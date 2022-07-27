@@ -43,8 +43,7 @@ jobs:
       run: dotnet restore "demo-dotnet-core-sln/DemoCICD-QOTD"
     - name: Build code
       run:
-        dotnet restore
-        dotnet build "demo-dotnet-core-sln/DemoCICD-QOTD" --configuration Release
+        dotnet build "demo-dotnet-core-sln/DemoCICD-QOTD" --configuration Release --no-restore
     - name: Test code 
       run: dotnet test "demo-dotnet-core-sln/Demo-CICD-QOTD.Tests"
     - name: Publish application
