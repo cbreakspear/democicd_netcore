@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\Demo-CICD-QOTD.Tests\\Demo-CICD-QOTD.Tests.csproj": {}
+    "c:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\Demo-CICD-QOTD.Tests\\Demo-CICD-QOTD.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\Demo-CICD-QOTD.Tests\\Demo-CICD-QOTD.Tests.csproj": {
+    "c:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\Demo-CICD-QOTD.Tests\\Demo-CICD-QOTD.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\Demo-CICD-QOTD.Tests\\Demo-CICD-QOTD.Tests.csproj",
+        "projectUniqueName": "c:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\Demo-CICD-QOTD.Tests\\Demo-CICD-QOTD.Tests.csproj",
         "projectName": "Demo-CICD-QOTD.Tests",
-        "projectPath": "C:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\Demo-CICD-QOTD.Tests\\Demo-CICD-QOTD.Tests.csproj",
+        "projectPath": "c:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\Demo-CICD-QOTD.Tests\\Demo-CICD-QOTD.Tests.csproj",
         "packagesPath": "C:\\Users\\cbrea\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\Demo-CICD-QOTD.Tests\\obj\\",
+        "outputPath": "c:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\Demo-CICD-QOTD.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -29,8 +29,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\DemoCICD-QOTD\\DemoCICD-QOTD.csproj": {
-                "projectPath": "C:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\DemoCICD-QOTD\\DemoCICD-QOTD.csproj"
+              "c:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\DemoCICD-QOTD\\DemoCICD-QOTD.csproj": {
+                "projectPath": "c:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\DemoCICD-QOTD\\DemoCICD-QOTD.csproj"
               }
             }
           }
@@ -85,14 +85,14 @@
         }
       }
     },
-    "C:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\DemoCICD-QOTD\\DemoCICD-QOTD.csproj": {
+    "c:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\DemoCICD-QOTD\\DemoCICD-QOTD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\DemoCICD-QOTD\\DemoCICD-QOTD.csproj",
+        "projectUniqueName": "c:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\DemoCICD-QOTD\\DemoCICD-QOTD.csproj",
         "projectName": "DemoCICD-QOTD",
-        "projectPath": "C:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\DemoCICD-QOTD\\DemoCICD-QOTD.csproj",
+        "projectPath": "c:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\DemoCICD-QOTD\\DemoCICD-QOTD.csproj",
         "packagesPath": "C:\\Users\\cbrea\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\DemoCICD-QOTD\\obj\\",
+        "outputPath": "c:\\Users\\cbrea\\OneDrive\\One Note Files\\DEMOs\\democicd_netcore\\demo-dotnet-core-sln\\DemoCICD-QOTD\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "BW2KgSNBqwE5jgUo+RsrNPwGzkYUKsncC3sCPUKeeZI=",
+  "Source": "DemoCICD-QOTD",
+  "BasePath": "_content/DemoCICD-QOTD",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

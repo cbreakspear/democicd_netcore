@@ -1,0 +1,11 @@
+C:\Users\cbrea\OneDrive\One Note Files\DEMOs\democicd_netcore\demo-dotnet-core-sln\DemoCICD-QOTD\publish\DemoCICD-QOTD.exe
+C:\Users\cbrea\OneDrive\One Note Files\DEMOs\democicd_netcore\demo-dotnet-core-sln\DemoCICD-QOTD\publish\appsettings.Development.json
+C:\Users\cbrea\OneDrive\One Note Files\DEMOs\democicd_netcore\demo-dotnet-core-sln\DemoCICD-QOTD\publish\appsettings.json
+C:\Users\cbrea\OneDrive\One Note Files\DEMOs\democicd_netcore\demo-dotnet-core-sln\DemoCICD-QOTD\publish\DemoCICD-QOTD.dll
+C:\Users\cbrea\OneDrive\One Note Files\DEMOs\democicd_netcore\demo-dotnet-core-sln\DemoCICD-QOTD\publish\DemoCICD-QOTD.deps.json
+C:\Users\cbrea\OneDrive\One Note Files\DEMOs\democicd_netcore\demo-dotnet-core-sln\DemoCICD-QOTD\publish\DemoCICD-QOTD.runtimeconfig.json
+C:\Users\cbrea\OneDrive\One Note Files\DEMOs\democicd_netcore\demo-dotnet-core-sln\DemoCICD-QOTD\publish\DemoCICD-QOTD.pdb
+C:\Users\cbrea\OneDrive\One Note Files\DEMOs\democicd_netcore\demo-dotnet-core-sln\DemoCICD-QOTD\publish\Microsoft.OpenApi.dll
+C:\Users\cbrea\OneDrive\One Note Files\DEMOs\democicd_netcore\demo-dotnet-core-sln\DemoCICD-QOTD\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\cbrea\OneDrive\One Note Files\DEMOs\democicd_netcore\demo-dotnet-core-sln\DemoCICD-QOTD\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\cbrea\OneDrive\One Note Files\DEMOs\democicd_netcore\demo-dotnet-core-sln\DemoCICD-QOTD\publish\Swashbuckle.AspNetCore.SwaggerUI.dll
