@@ -49,7 +49,7 @@ jobs:
       run: |
           dotnet restore
           dotnet build "demo-dotnet-core-sln/DemoCICD-QOTD" --configuration Release
-          dotnet publish -c Release -o '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp'
+          dotnet publish "demo-dotnet-core-sln/DemoCICD-QOTD" -c Release -o '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp'
 
 
          
